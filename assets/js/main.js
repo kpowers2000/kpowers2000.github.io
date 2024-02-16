@@ -3,8 +3,29 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+    function goBack() {
+        window.history.back()
+    }
 
 (function($) {
+	$(".show-more").click(function () {
+		if($(".text").hasClass("show-more-height")) {
+			$(this).text("(Show Less)");
+		} else {
+			$(this).text("(Show More)");
+		}
+	
+		$(".text").toggleClass("show-more-height");
+		
+	});
+	$(".show-more").click(function () {
+		if($(".text").hasClass("show-more-height")) {
+			$(this).text("(Show Less)");
+		} else {
+			$(this).text("(Show More)");
+		}
+	
+		$(".text").toggleClass("show-more-height");
 
 	var	$window = $(window),
 		$head = $('head'),
@@ -21,7 +42,7 @@
 			'xlarge-to-max':    '(min-width: 1681px)',
 			'small-to-xlarge':  '(min-width: 481px) and (max-width: 1680px)'
 		});
-
+		
 	// Stops animations/transitions until the page has ...
 
 		// ... loaded.
@@ -258,5 +279,59 @@
 				});
 
 			});
-
+			$(".show-more").click(function () {
+				if($(".text").hasClass("show-more-height")) {
+					$(this).text("(Show Less)");
+				} else {
+					$(this).text("(Show More)");
+				}
+			
+				$(".text").toggleClass("show-more-height");
+				
+			});
 })(jQuery);
+	
+});
+
+
+////// Accordion 
+$('.accordion .quest-title.active1').addClass('active');
+$('#accordion-1').slideDown(300).addClass('open');
+function close_accordion_section() {
+jQuery('.accordion .quest-title').removeClass('active');
+jQuery('.accordion .quest-content').slideUp(300).removeClass('open');
+}
+jQuery('.quest-title').click(function(e) {
+// Grab current anchor value
+var currentAttrValue = jQuery(this).attr('href');
+if(jQuery(e.target).is('.active')) {
+close_accordion_section();
+}else {
+close_accordion_section();
+// Add active class to section title
+jQuery(this).addClass('active');
+// Open up the hidden content panel
+jQuery('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+}
+e.preventDefault();
+});
+////// Accordion end 
+
+// TABS
+
+// Show the first tab and hide the rest
+//$('#tabs-nav li:first-child').addClass('active');
+$('.tab-content').hide();
+//$('.tab-content:first').show();
+
+// Click function
+$('#tabs-nav li').click(function(){
+  $('#tabs-nav li').removeClass('active');
+  $(this).addClass('active');
+  $('.tab-content').hide();
+  
+  var activeTab = $(this).find('a').attr('href');
+  $(activeTab).fadeIn();
+  return false;
+});
+

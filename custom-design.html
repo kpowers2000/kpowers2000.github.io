@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<!--
+	HOW TO SEND TO GITHUB
+	cd html5up-editorial
+	git add .
+	git commit -m "message"
+	git push origin main
+-->
+
+<html>
+  <head>
+    <title>K-Powers</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      .hiddenText {
+        display: none;
+      }
+
+      .hidden {
+        display: none;
+      }
+      .first-banner-toggle p {
+        margin: 0px 0px 0px 0px;
+      }
+
+      .first-banner-toggle {
+        margin: 0px 0px 20px 0px;
+      }
+      .first-banner-toggle button {
+        border: none;
+        color: #f56a6a;
+        font-size: 16px;
+        background: transparent;
+      }
+      .first-banner-toggle h3 {
+        margin: 0px 0px 4px 0px;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      /* Style for the dropdown button */
+      .dropdown-button {
+        border: none;
+        background: transparent !important;
+        cursor: pointer;
+        font-family: "Roboto Slab", serif;
+        font-size: 13px;
+        color: #655e5e;
+        font-weight: 400;
+        padding: 0;
+      }
+
+      /* Style for the dropdown content (hidden by default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      /* Style for the dropdown options */
+      div#myDropdown {
+        font-size: 9px;
+        padding: 20px;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a href="index.html" class="logo"
+              ><strong>Editorial</strong> by HTML5 UP</a
+            >
+            <ul class="icons">
+              <li>
+                <a href="#" class="icon brands fa-facebook-f"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <!--TODO Add Facebook -->
+              <li>
+                <a
+                  href="https://www.instagram.com/kpow2000/"
+                  class="icon brands fa-instagram"
+                >
+                  <span class="label">Instagram</span></a
+                >
+              </li>
+            </ul>
+          </header>
+
+          <!-- Blog Section Start -->
+          <section class="blog-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="blog-head">
+                    <h1>Powers Designs</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Blog Section End -->
+          <!-- <section id="banner">
+            <div class="content"> -->
+              <!--<header>-->
+              <!--	<h1>Keenan Powers<br />-->
+              <!--	</h1>-->
+              <!--	<P>I'm a passionate individual with a zest for innovation and a mission to make a positive-->
+              <!--		impact. </P>-->
+              <!--</header>-->
+              <!--<h7> Professional Summary </h7>-->
+              <!--<P>Analytically driven professional with a strong foundation in mathematics and engineering,-->
+              <!--	seeking to apply these skills in business-focused roles. Experienced in translating complex-->
+              <!--	technical concepts into practical solutions, with a keen eye for data-driven-->
+              <!--	decision-making. Looking to leverage my quantitative background to drive product innovation-->
+              <!--	and sales by providing a unique perspective and problem-solving acumen.-->
+              <!--</P>-->
+              <!-- <div id="profile-description">
+							<div class="text show-more-height">
+								Academics
+								<br /><br />
+								At Cobalt we help people and businesses throughout the world realize their full
+								potential. <br />
+								We make this simple mission come to life every day through our passion to create
+								technologies <br><br>and develop products that touch just about every kind of customer.
+								<p>Project Management</p>
+								<p>Published Work</p>
+								<p>Community Engagement</p>
+								<p>Hobbies and Fun Facts</p>
+							</div>
+							<div class="show-more">Show more</div>
+						</div> -->
+              <!--<div class="first-banner-txt">-->
+              <!--     <h2>Academics</h2>-->
+              <!--    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span class="hidden">-->
+              <!--       Lorem Ipsum has been the industry's-->
+              <!--    standard dummy text ever since the 1500s..  -->
+              <!--    </span>-->
+              <!--    </p>-->
+              <!--    <a onclick="toggleParagraph()">View More</a>-->
+              <!--</div>-->
+              <!--	<div class="">-->
+              <!--	     <h2>Project Management</h2>-->
+              <!--    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span class="hidden">-->
+              <!--       Lorem Ipsum has been the industry's-->
+              <!--    standard dummy text ever since the 1500s..  -->
+              <!--    </span>-->
+              <!--    </p>-->
+              <!--    <a onclick="toggleParagraph()">View More</a>-->
+              <!--</div>-->
+
+              <!-- Item 1 -->
+<!-- 
+              <div class="first-banner-toggle">
+                <h3>Wedding</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div id="text1" class="hiddenText">
+                  <p>
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s.
+                  </p>
+                </div>
+                <button onclick="toggleText(1)">View More</button>
+              </div>
+
+              <div class="first-banner-toggle">
+                <h3>Pride</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div id="text2" class="hiddenText">
+                  <p>
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s.
+                  </p>
+                </div>
+                <button onclick="toggleText(2)">View More</button>
+              </div>
+
+              <div class="first-banner-toggle">
+                <h3>Business/Entrepreneurial</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div id="text3" class="hiddenText">
+                  <p>
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s.
+                  </p>
+                </div>
+                <button onclick="toggleText(3)">View More</button>
+              </div>
+
+              <div class="first-banner-toggle">
+                <h3>Math</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div id="text4" class="hiddenText">
+                  <p>
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s.
+                  </p>
+                </div>
+                <button onclick="toggleText(4)">View More</button>
+              </div>
+
+              <div class="first-banner-toggle">
+                <h3>Loved But Never Forgotten</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div id="text5" class="hiddenText">
+                  <p>
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s.
+                  </p>
+                </div>
+                <button onclick="toggleText(5)">View More</button>
+              </div>
+            </div>
+          </section> -->
+
+   <section class="power-logos-sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-6">
+                <div class="power-logo">
+                    <a  href="power-design.html"><img style="margin-top: 46px;" src="images/POWER.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-6">
+                <div class="power-logo">
+                    <a href="power-wedding-design.html"><img src="images/power-wedding.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-6">
+                <div class="power-logo">
+                    <a href="power-design-love.html"><img src="images/power-design.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-6">
+                <div class="power-logo">
+                    <a href="powers-business.html"><img src="images/power-business.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-6">
+                <div class="power-logo">
+                    <a href="power-pride.html"><img src="images/power-pride.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-6">
+                <div class="power-logo">
+                    <a href="power-math.html"><img src="images/power-math.jpg" alt=""></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+   </section>
+
+
+          <section class="custom-design-sec">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-12">
+                  <div class="custom-design-txt">
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop publishing
+                      software like Aldus PageMaker including versions of Lorem
+                      Ipsum.
+                    </p>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop publishing
+                      software like Aldus PageMaker including versions of Lorem
+                      Ipsum.
+                    </p>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop publishing
+                      software like Aldus PageMaker including versions of Lorem
+                      Ipsum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Search -->
+          <section id="search" class="alt">
+            <form method="post" action="#">
+              <input type="text" name="query" id="query" placeholder="Search" />
+            </form>
+          </section>
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+            <ul>
+              <li><a target="_blank" href="index.html">Homepage</a></li>
+              <li><a target="_blank" href="images/kpower-resume.pdf">Resume</a></li>
+              <li><a href="custom-design.html">Custom Designs</a></li>
+
+              <li></li>
+              <div class="dropdown">
+                <!-- Dropdown button -->
+                <li>
+                  <span class="opener">
+                    <button class="dropdown-button" onclick="toggleDropdown()">
+                      Letter of oustanding performance
+                      <i class="ri-arrow-down-s-line"></i></button
+                  ></span>
+
+                  <!-- Dropdown content -->
+                  <div class="dropdown-content" id="myDropdown">
+                    <!-- More text to be displayed -->
+                    <p>
+                      <a href="images/RebeccaEPA.pdf"
+                        >1. Rebecca Branch - EPA NVFEL Intern Coordinator
+                      </a>
+                    </p>
+                    <p>
+                      <a target="_blank" href="images/20231220155321_0-Peggy Matson.pdf" 
+                        >2. Peggy Matson - Duke Pratt School of Engineering
+                        Executive in Residence.</a
+                      >
+                    </p>
+                    <p>
+                      <a href="#"
+                        >3. Hubert Bray - Duke University Director of
+                        Undergraduate Studies in Mathematics</a
+                      >
+                    </p>
+                  </div>
+                </li>
+              </div>
+
+              <li><a href="blog.html">Blogs</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleText(textNumber) {
+        // Clicked button ke mutabiq text ko toggle karo
+        let textElement = document.getElementById("text" + textNumber);
+        if (textElement.style.display === "none") {
+          textElement.style.display = "block";
+        } else {
+          textElement.style.display = "none";
+        }
+      }
+    </script>
+    <script>
+      function toggleDropdown() {
+        var dropdown = document.getElementById("myDropdown");
+        dropdown.style.display =
+          dropdown.style.display === "block" ? "none" : "block";
+      }
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".opener").click(function () {
+          $(".ul-display").slideToggle();
+        });
+      });
+    </script>
+
+    <!-- Scripts -->
+    <!--DO NOT TOUCH-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

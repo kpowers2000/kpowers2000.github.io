@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!--
+	HOW TO SEND TO GITHUB
+	cd html5up-editorial
+	git add .
+	git commit -m "message"
+	git push origin main
+-->
+
+<html>
+  <head>
+    <title>K-Powers</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+	 
+        .hiddenText {
+               display: none;
+           }
+        
+       .hidden {
+         display: none;
+       }
+   .first-banner-toggle p {
+       margin: 0px 0px 0px 0px;
+   }
+   
+   .first-banner-toggle {
+       margin: 0px 0px 20px 0px;
+   }
+       .first-banner-toggle button {
+       border: none;
+       color: #f56a6a;
+       font-size: 16px;
+       background: transparent;
+   }
+   .first-banner-toggle h3 {
+       margin: 0px 0px 4px 0px;
+   }
+         .dropdown {
+               position: relative;
+               display: inline-block;
+           }
+   
+           /* Style for the dropdown button */
+       .dropdown-button {
+       border: none;
+       background: transparent !important;
+       cursor: pointer;
+       font-family: "Roboto Slab", serif;
+       font-size: 13px;
+       color: #655e5e;
+       font-weight: 400;
+       padding: 0 ;
+   }
+           /* Style for the dropdown content (hidden by default) */
+           .dropdown-content {
+               display: none;
+               position: absolute;
+               background-color: #f9f9f9;
+               box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+               z-index: 1;
+           }
+   
+           /* Style for the dropdown options */
+                div#myDropdown {
+       font-size: 9px;
+       padding: 20px;
+   }
+           .dropdown-content a {
+               
+               color: black;
+               padding: 12px 16px;
+               text-decoration: none;
+               display: block;
+           }
+     </style>
+  </head>
+  <body class="is-preload">
+
+
+
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+      <!-- Header -->
+      <header id="header">
+        <a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a>
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
+          </li>
+          <!--TODO Add Facebook -->
+          <li>
+            <a href="https://www.instagram.com/kpow2000/" class="icon brands fa-instagram">
+              <span class="label">Instagram</span></a>
+          </li>
+        </ul>
+      </header>
+
+      <!-- Blog Section Start -->
+      <section class="blog-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-6">
+              <div class="blog-head">
+                <h1>Power Designs</h1>
+                <p>Loved And Never Forgooton</p>
+              </div>
+               </div>
+               <div class="col-lg-6 col-6 d-flex justify-content-end">
+        <button class="btn_back" onclick="goBack()" >Back</button>
+      </div>
+           
+          </div>
+        </div>
+      </section>
+  
+
+      <section class="power-logos-pg">
+        <div class="container">
+          <div class="row">
+     <div class="col-lg-3 col-3"> </div>
+<div class="col-lg-6 col-6"> 
+    <div class="col-lg-6 col-6">
+        <div class="power-pg-logo">
+          <img src="images/power-design.jpg" alt="">
+        </div>
+      </div>
+</div>
+<div class="col-lg-3 col-3"> </div>
+       
+          </div>
+        </div>
+      </section>
+   <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Loved And Never Forgotten</h2>
+            </div>
+        </div>
+    </div>
+   </section>
+    
+        <section class="power-logos-pg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-4">
+                       <div class="power-pg-logo">
+                        <img  height="250px" src="Powers_Designs/Loved_And_Never_Forgotten/Poppy.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-4">
+                    <div class="power-pg-logo">
+                         <img  height="250px" src="Powers_Designs/Loved_And_Never_Forgotten/Roberta.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-4">
+                       <div class="power-pg-logo">
+                          <!--<img  height="250px" src="Powers_Designs/Business_Collection/3H_Personality_Theory/The_Hustler.png" alt="">-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+
+
+
+        </div>
+    </div>
+
+
+
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <div class="inner">
+      <!-- Search -->
+      <section id="search" class="alt">
+        <form method="post" action="#">
+          <input type="text" name="query" id="query" placeholder="Search" />
+        </form>
+      </section>
+
+      <!-- Menu -->
+      <nav id="menu">
+        <header class="major">
+          <h2>Menu</h2>
+        </header>
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a target="_blank" href="images/kpower-resume.pdf">Resume</a></li>
+          <li><a href="custom-design.html">Custom Designs</a></li>
+
+          <li></li>
+          <div class="dropdown">
+            <!-- Dropdown button -->
+            <li>
+              <span class="opener">
+                <button class="dropdown-button" onclick="toggleDropdown()">
+                  Letter of oustanding performance
+                  <i class="ri-arrow-down-s-line"></i></button
+              ></span>
+
+              <!-- Dropdown content -->
+              <div class="dropdown-content" id="myDropdown">
+                <!-- More text to be displayed -->
+                <p>
+                  <a target="_blank" href="images/RebeccaEPA.pdf"
+                    >1. Rebecca Branch - EPA NVFEL Intern Coordinator
+                  </a>
+                </p>
+                <p>
+                  <a target="_blank" href="images/20231220155321_0-Peggy Matson.pdf"
+                    >2. Peggy Matson - Duke Pratt School of Engineering
+                    Executive in Residence.</a
+                  >
+                </p>
+                <p>
+                  <a href="#"
+                    >3. Hubert Bray - Duke University Director of
+                    Undergraduate Studies in Mathematics</a
+                  >
+                </p>
+              </div>
+            </li>
+          </div>
+
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+    
+  </div>
+</div>
+
+</div>
+
+<!-- Scripts -->
+<!--DO NOT TOUCH-->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
